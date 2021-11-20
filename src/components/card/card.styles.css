@@ -1,0 +1,22 @@
+.image{
+height: 180px;
+width: 180px;
+align-self: center;
+}
+
+.card{
+border: solid 2px rgb(161, 154, 154);    
+border-radius: 5px;
+background-color: rgb(68, 240, 240);
+height: 350px;
+width: 250px;
+padding: 25px;
+transform:translateZ(0) ;
+transition: transform 0.25s ease-out;
+display:flex;
+flex-direction: column;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
