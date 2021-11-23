@@ -10,7 +10,8 @@ class App extends Component{
       super();
       this.state = {
         monsters: [],
-        SearchField : ""
+        SearchField : "",
+        title :""
         
       }
     }
@@ -25,7 +26,7 @@ class App extends Component{
       const filteredMonsters = this.state.monsters.filter(monster=> monster.name.toLowerCase().includes(this.state.SearchField.toLowerCase()));
       return (
         <div className="App" >
-        <h1> Monsters-Rolodex</h1>
+        <h1>Monsters-Rolodex< gity/h1>
         
         <SearchBox placeholder = "monsters name" handlechange ={(e)=> this.setState({SearchField:e.target.value})} />
         
